@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<title>home sweet home</title>
+			<link rel="stylesheet" href="style.css" type="text/css" />
+			<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		</head>
+		<body>
+			<div class="searchContainer">
+				<form class="searchForm" method="get" target="_blank" action="https://duckduckgo.com/?q=">
+					<input class="searchBar google" type="text" name="q" placeholder="duckduckgo search"/>
+				</form>
+			</div>
+			<ul class="border">
+				<li><a class="parent1" href="#">Basics</a>
+					<ul class="subMenu">
+						<li><a class="tab1" href="https://mail.google.com/">Gmail</a></li>
+						<li><a class="tab1" href="http://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li>
+						<li><a class="tab1" href="https://keybase.io/">keybase.io</a></li>
+						<li><a class="tab1" href="https://github.com/">GitHub</a></li>
+						<li><a class="tab1" href="https://hastebin.com/">hastebin</a></li>
+						<li><a class="tab1" href="https://imgur.com/">imgur</a></li>
+						<li><a class="tab1" href="https://www.christopel.com/">My Site</a></li>
+						<li><a class="tab1" href="https://trello.com/">Trello</a></li>
+					</ul>
+				</li>
+				<li><a class="parent2" href="#">Local</a>
+					<ul class="subMenu">
+						<li><a class="tab2" href="https://10.1.1.25:8006/#v1:0:=node%2Fproxmox:4::::::">Proxmox</a></li>
+						<li><a class="tab2" href="https://10.1.1.251/">FreeNAS</a></li>
+						<li><a class="tab2" href="http://pm-xp-vm:8081/home/">Sickbeard</a></li>
+						<li><a class="tab2" href="http://10.1.1.100:32400/web/index.html">Plex</a></li>
+						<li><a class="tab2" href="https://10.1.1.171:8080/">Calibre</a></li>
+						<li><a class="tab2" href="https://10.1.1.171:25565/">Minecraft</a></li>
+						<li><a class="tab2" href="http://10.1.1.5/">Router</a></li>
+						<li><a class="tab2" href="http://dashboard.meraki.com/">Meraki</a></li>
+					</ul>				
+				</li>
+				<li><a class="parent3" href="#">Communities</a>
+					<ul class="subMenu">
+						<li><a class="tab3" href="https://wwww.facebook.com/">Facebook</a></li>
+						<li><a class="tab3" href="https://www.reddit.com/">reddit</a></li>
+						<li><a class="tab3" href="https://wwww.massdrop.com/">Massdrop</a></li>
+						<li><a class="tab3" href="https://boards.4chan.org/lit/">/lit/</a></li>
+						<li><a class="tab3" href="https://boards.4chan.org/b/">/b/</a></li>
+						<li><a class="tab3" href="https://boards.4chan.org/g/">/g/</a></li>
+						<li><a class="tab3" href="https://news.ycombinator.com/news">Hacker News</a></li>
+						<li><a class="tab3" href="http://www.deviantart.com/">DeviantArt</a></li>
+						<li><a class="tab3" href="https://www.linkedin.com/">LinkedIn</a></li>
+					</ul>
+				</li>
+				<li><a class="parent4" href="#">File Sharing</a>
+					<ul class="subMenu">
+						<li><a class="tab4" href="https://mega.nz/">MEGA</a></li>
+						<li><a class="tab4" href="https://reep.io/">reep.io</a></li>
+						<li><a class="tab4" href="https://drive.google.com/">Google Drive</a></li>
+						<li><a class="tab4" href="http://terashare.net/">Terashare</a></li>
+						<li><a class="tab4" href="https://openload.io/">openload</a></li>
+					</ul>
+				</li>
+				<li><a class="parent5" href="#">Entertainment</a>
+					<ul class="subMenu">
+						<li><a class="tab5" href="https://play.google.com/music">Google Music</a></li>
+						<li><a class="tab5" href="http://games.espn.go.com/frontpage">ESPN</a></li>
+						<li><a class="tab5" href="https://www.youtube.com/">YouTube</a></li>
+						<li><a class="tab5" href="http://www.twitch.tv/">Twitch.TV</a></li>
+						<li><a class="tab5" href="http://www.nosubscriptionrequired.net/">NoSubscriptionRequired</a></li>
+						<li><a class="tab5" href="http://www.tastekid.com/">TasteKid</a></li>
+						<li><a class="tab5" href="http://www.avclub.com/">A.V. Club</a></li>
+					</ul>
+				</li>
+			</ul>
+				<script>
+					$('.subMenu').hide();
+					$("li:has(ul)").click(function(){
+					$("ul",this).slideToggle('fast');
+					});
+				</script>
+		</body>
+	</html>
