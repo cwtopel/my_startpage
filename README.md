@@ -1,6 +1,6 @@
 # my_startpage
 
-This is my current homepage project. 
+This is my current homepage project. It is just an edit of [mrnatbus12/My_Homepage](https://github.com/mrnatbus12/My_Homepage).
 
 Edit this to change the background:
 ```css
